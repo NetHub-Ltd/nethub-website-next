@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "@node_modules/next/image";
 
 const ProductsCard = ({ image, title, description, link, ctaText }) => {
   return (
@@ -9,11 +10,22 @@ const ProductsCard = ({ image, title, description, link, ctaText }) => {
       transition={{ duration: 0.6, ease: "easeOut" }} // Smooth transition
     >
       {/* Image Section */}
+      <div className="w-full h-[150px] overflow-hidden">
+        <Image
+          className="object-cover rounded-t-md"
+          src={image}
+          alt={title}
+          width={500} // This can be any number that represents the aspect ratio
+          height={150} // Adjust according to your desired aspect ratio
+          layout="responsive" // This will ensure the image takes up 100% of the container width
+        />
+      </div>
+      {/* 
       <img
         className="w-full h-[150px] object-cover rounded-t-md"
         src={image}
         alt={title}
-      />
+      /> */}
 
       {/* Content Section */}
       <div className="p-4 flex flex-col">

@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
       <body className="bg-background text-darkGray">
         <Provider>
           <NavBar />
-          <main className="p-2 md:p-4">{children}</main>
+          <main className="p-2 min-h-screen md:p-4">{children}</main>
           <Footer />
         </Provider>
       </body>
