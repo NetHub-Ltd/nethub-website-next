@@ -9,7 +9,8 @@ const ProductsCard = ({ image, title, description, link, ctaText }) => {
       animate={{ opacity: 1, y: 0 }} // Fade in and slide up to the final position
       transition={{ duration: 0.6, ease: "easeOut" }} // Smooth transition
     >
-      <div className="w-full">
+      {/* Image Section */}
+      <div className="w-full h-[150px] overflow-hidden">
         <Image
           className="object-cover rounded-t-md"
           src={image}
@@ -19,6 +20,12 @@ const ProductsCard = ({ image, title, description, link, ctaText }) => {
           layout="responsive" // This will ensure the image takes up 100% of the container width
         />
       </div>
+      {/* 
+      <img
+        className="w-full h-[150px] object-cover rounded-t-md"
+        src={image}
+        alt={title}
+      /> */}
 
       {/* Content Section */}
       <div className="p-4 flex flex-col">

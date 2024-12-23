@@ -67,3 +67,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.link-style {
+  @apply hover:text-primary  transition duration-200 focus:text-primary;
+}

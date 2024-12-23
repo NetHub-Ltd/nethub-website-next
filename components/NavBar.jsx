@@ -34,14 +34,18 @@ const NavBar = () => {
       zIndex={1000}
     >
       <Flex direction={"row"} alignItems={"center"}>
-        <Image
-          className="px-2"
-          src="./images/logo-v3.svg"
-          alt="NetHubLogo"
-          width={50}
-          height={50}
-        />
-        <h1 className="hidden md:block font-bold text-2xl">NetHub</h1>
+        <div className="w-[50] h-[50] overflow-hidden">
+          <Image
+            className="px-2"
+            src="./images/logo-v3.svg"
+            alt="NetHubLogo"
+            width={50}
+            height={50}
+          />
+        </div>
+        <Link className="text-xl hidden md:block link-style" href="/">
+          Nethub
+        </Link>
       </Flex>
 
       {/* links */}
@@ -52,16 +56,21 @@ const NavBar = () => {
         gap={4}
       >
         {Object.keys(links).map((link) => (
-          <Link
-            className="text-2xl hover:text-accent"
-            href={links[link]}
-            key={link}
-          >
-            <Text>{link}</Text>
+          <Link className="text-xl link-style" href={links[link]} key={link}>
+            {link}
           </Link>
         ))}
-
-        <a href="#">Hire Now</a>
+        <div className="hidden lg:flex gap-4">
+          <Link
+            className="text-xl text-white px-4 rounded-md bg-primary"
+            href={"/login"}
+          >
+            Login
+          </Link>
+          <Link className="text-xl" href={"/signup"}>
+            Signup
+          </Link>
+        </div>
       </Flex>
       <Flex display={{ base: "flex", md: "none" }} alignItems={"center"}>
         <MobileMenu />
