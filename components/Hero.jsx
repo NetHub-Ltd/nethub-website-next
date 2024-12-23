@@ -37,6 +37,7 @@ const Hero = () => {
 
     // Clear the interval on component unmount
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Calculate the typing speed for the text
