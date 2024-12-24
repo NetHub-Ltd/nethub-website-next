@@ -24,7 +24,6 @@ const NavBar = () => {
   return (
     <Flex
       p={2}
-      boxShadow={"md"}
       bg={"white"}
       justify={"space-between"}
       direction={"row"}
