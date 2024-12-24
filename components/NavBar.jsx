@@ -66,7 +66,7 @@ const NavBar = () => {
           >
             Login
           </Link>
-          <Link className="text-xl" href={"/signup"}>
+          <Link className="text-xl" href={"/register"}>
             Signup
           </Link>
         </div>
