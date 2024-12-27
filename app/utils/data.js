@@ -27,7 +27,7 @@ export const data = [
     title: "MPesa Integration",
     description:
       "Seamlessly integrate MPesa into your systems to simplify payments, enhance customer convenience, and grow your revenue.",
-    image: "/images/hero-bg.jpg",
+    image: "/images/mpesa.jpg",
     ctaText: "Learn More",
     link: "/services",
     ctaText: "Simplify Payments",
