@@ -4,7 +4,7 @@ import NavBar from "@components/NavBar";
 import Footer from "@components/Footer";
 import { Provider } from "@components/ui/provider";
 import { Poppins, Roboto } from "next/font/google";
-
+import { Analytics } from "@vercel/analytics/next";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600"],
@@ -65,11 +65,18 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content="/images/logo-v3.svg" />
+        <meta
+          name="google-site-verification"
+          content="AMulxsw3InJpd-SJcJqJeD-wAslH5SnYaB4jK0XHGIE"
+        />
       </head>
       <body className="bg-background text-darkGray">
         <Provider>
           <NavBar />
-          <main className="p-2 min-h-screen md:p-4">{children}</main>
+          <main className="p-2 min-h-screen md:p-4">
+            {children}
+            <Analytics />
+          </main>
           <Footer />
         </Provider>
       </body>
