@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
         <script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="QTNpI2DJ/rFJEOttW/YrUw"
-          defer="true"
+          defer={true}
         ></script>
       </head>
       <body className="bg-background text-darkGray">

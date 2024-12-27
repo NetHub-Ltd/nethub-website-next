@@ -56,7 +56,7 @@ const Hero = () => {
       {" "}
       {/* Fixed height for consistency */}
       {/* Main Text Animation */}
-      <h1 className="font-bold text-primary mb-4">
+      <h1 className="font-bold text-white mb-4">
         <Typewriter
           options={{
             strings: [textSets[currentSet].mainText],
@@ -67,7 +67,7 @@ const Hero = () => {
         />
       </h1>
       {/* Subtext Animation */}
-      <h4 className="text-gray-600">
+      <h4 className="text-white">
         <Typewriter
           options={{
             strings: [textSets[currentSet].subText],

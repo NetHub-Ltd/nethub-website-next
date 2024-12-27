@@ -30,12 +30,10 @@ const cardData = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="w-full bg-white p-4 mb-4 border border-gray-200">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-primary mb-4">
-          Why Choose Nethub?
-        </h2>
-        <p className="text-gray-600">
+    <section className="w-full p-4 mb-4 border border-gray-200">
+      <div className="mb-8">
+        <h3 className="font-bold text-primary mb-4">Why Choose Nethub?</h3>
+        <p className="">
           Discover why Nethub is the trusted choice for businesses.
         </p>
       </div>
@@ -44,11 +42,11 @@ const WhyChooseUs = () => {
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="flex bg-white border border-transparent hover:border-primary rounded-lg shadow-md hover:shadow-lg transition-shadow h-full"
+            className="flex border border-transparent hover:border-primary rounded-lg shadow-md hover:shadow-lg transition-shadow h-full"
           >
             <div className="bg-primary w-2 h-full rounded-l-lg"></div>
             <div className="p-6 flex flex-col justify-between">
-              <h3 className="font-bold">{card.title}</h3>
+              <h5 className="mb-2">{card.title}</h5>
               <p className="">{card.description}</p>
               <a href={card.linkHref} className="text-accent mt-4 inline-block">
                 {card.linkText}

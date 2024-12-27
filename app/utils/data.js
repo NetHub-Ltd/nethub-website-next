@@ -19,7 +19,7 @@ export const data = [
     title: "App Development",
     description:
       "Bring your ideas to life with innovative, scalable, and high-performance mobile and web applications designed for success.",
-    image: "/images/hero-bg.jpg",
+    image: "/images/appdev.jpg",
     link: "/services",
     ctaText: "Build My App",
   },

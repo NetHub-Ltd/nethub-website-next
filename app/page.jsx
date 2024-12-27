@@ -23,7 +23,10 @@ const Home = () => {
     <div className="flex flex-col min-h-screen">
       {/* hereo section */}
 
-      <div className="flex  bg-white rounded-md my-2 h-[300px] md:h-[400px] mt-[80px] flex-col px-2 md:px-6 justify-center">
+      <div
+        className="flex  bg-white p-4 md:p-6 h-[300px] md:h-[400px] mt-[60px] flex-col bg-cover bg-center justify-center"
+        style={{ backgroundImage: 'url("/images/purple.jpg")' }}
+      >
         <Hero />
         <button className="bg-accent mt-4 text-white py-2 px-2 w-[150px] md:w-[200px] rounded-md">
           Get Started
@@ -31,10 +34,10 @@ const Home = () => {
       </div>
       {/* who are we */}
 
-      <div className="flex flex-col-reverse md:flex-row mb-4 justify-evenly border border-gray-200 hover:border-primary rounded-md bg-white">
+      <div className="flex flex-col-reverse md:flex-row mb-4 justify-evenly border border-gray-200 hover:border-primary rounded-md">
         <div className="w-full md:w-1/2 flex items-center justify-center p-4">
           <div>
-            <h1 className="text-2xl font-bold text-primary mt-4">Who Are We</h1>
+            <h3 className="font-bold text-primary mt-4">Who Are We</h3>
             <p className="mt-2">
               We focus on empowering businesses by offering digital solutions
               that help them grow and succeed in the modern marketplace.
@@ -63,7 +66,7 @@ const Home = () => {
       </section>
 
       {/* service section */}
-      <div>
+      <div className="w-full p-4 bg-white">
         <ProductsGrid />
       </div>
 
