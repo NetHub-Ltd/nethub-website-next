@@ -65,10 +65,17 @@ export default function RootLayout({ children }) {
         <meta name="twitter:title" content={metadata.title} />
         <meta name="twitter:description" content={metadata.description} />
         <meta name="twitter:image" content="/images/logo-v3.svg" />
+        {/* google search console */}
         <meta
           name="google-site-verification"
           content="AMulxsw3InJpd-SJcJqJeD-wAslH5SnYaB4jK0XHGIE"
         />
+        {/* ahrefs */}
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="QTNpI2DJ/rFJEOttW/YrUw"
+          defer="true"
+        ></script>
       </head>
       <body className="bg-background text-darkGray">
         <Provider>
