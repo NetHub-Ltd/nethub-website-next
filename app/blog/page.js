@@ -1,14 +1,16 @@
-// app/blog/page.js
+import Link from "@node_modules/next/link";
 const Blog = () => {
   return (
     <div>
       <h1>Our Blog</h1>
       <ul>
         <li>
-          <a href="/blog/sample-post">How Nethub Can Help Your Business</a>
+          <Link href="/blog/sample-post">
+            How Nethub Can Help Your Business
+          </Link>
         </li>
         <li>
-          <a href="/blog/sample-post">5 Tips for Effective SEO</a>
+          <Link href="/blog/sample-post">5 Tips for Effective SEO</Link>
         </li>
       </ul>
     </div>

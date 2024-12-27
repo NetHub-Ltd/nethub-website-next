@@ -46,7 +46,7 @@ const Testimonials = () => {
               className="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col justify-between"
               style={{ minHeight: "350px" }}
             >
-              <p className=" mb-4">"{testimonial.text}"</p>
+              <p className="mb-4">"{testimonial.text}"</p>
               <div className="flex items-center gap-2">
                 <div className="w-12 h-12 rounded-full bg-gray-300"></div>
                 <div>
