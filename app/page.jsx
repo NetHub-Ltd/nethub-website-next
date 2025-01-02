@@ -1,5 +1,7 @@
 "use client";
 
+import { ArrowRightIcon } from "@node_modules/@heroicons/react/24/outline";
+
 import ProductsCard from "@components/ProductsCard";
 import ProductsGrid from "@components/ProductsGrid";
 import Image from "@node_modules/next/image";
@@ -8,6 +10,7 @@ import Hero from "@components/Hero";
 import Link from "@node_modules/next/link";
 import WhyChooseUs from "@components/WhyChooseUs";
 import Testimonials from "@components/Testimonials";
+import ScrollButton from "@components/ScrollButton";
 const Home = () => {
   const Card = data.map((d) => (
     <ProductsCard
@@ -21,59 +24,66 @@ const Home = () => {
   ));
   return (
     <div className="flex flex-col min-h-screen">
-      {/* hereo section */}
+      {/* hero section */}
 
       <div
-        className="flex  bg-white p-4 md:p-6 h-[300px] md:h-[400px] mt-[60px] flex-col bg-cover bg-center justify-center"
+        className="flex  bg-white p-4  mb-4 md:mb-6 h-screen md:h-[400px] flex-col bg-cover bg-center justify-center"
         style={{ backgroundImage: 'url("/images/purple.jpg")' }}
       >
         <Hero />
-        <button className="bg-accent mt-4 text-white py-2 px-2 w-[150px] md:w-[200px] rounded-md">
-          Get Started
-        </button>
+
+        <Link
+          href="#services"
+          className="bg-accent mt-4 text-white font-bold  text-center md:text-2xl md:w-[200px] p-2 rounded-md"
+        >
+          <div className="flex items-center flex-row gap-1 justify-center">
+            Get Started <ArrowRightIcon className=" h-6 w-6" />
+          </div>
+        </Link>
       </div>
       {/* who are we */}
 
-      <div className="flex flex-col-reverse md:flex-row mb-4 justify-evenly border border-gray-200 hover:border-primary rounded-md">
-        <div className="w-full md:w-1/2 flex items-center justify-center p-4">
-          <div>
-            <h3 className="font-bold text-primary mt-4">Who Are We</h3>
-            <p className="mt-2">
-              We focus on empowering businesses by offering digital solutions
-              that help them grow and succeed in the modern marketplace.
-            </p>
-            <Link href="/about" className="mt-4 text-accent">
-              Read More
-            </Link>
+      <div className="flex flex-col p-2 rounded-md  bg-white md:p-6 items-center justify-center ">
+        <p className="text-center md:text-2xl">
+          We focus on empowering businesses by offering digital solutions that
+          help them grow and succeed in the modern marketplace.
+        </p>
+        <Link
+          href="/about"
+          className="bg-slate-500 text-white text-xl mt-4 rounded-md p-2"
+        >
+          <div className="flex items-center flex-row gap-1 justify-center">
+            About Us <ArrowRightIcon className=" h-6 w-6" />
           </div>
-        </div>
-
-        <div className="max-h-[350px] w-full  md:w-1/2 overflow-hidden">
-          <Image
-            src="/images/whoarewe-2.jpg"
-            alt="whoarewe"
-            width={500} // This can be any number that represents the aspect ratio
-            height={500} // Adjust according to your desired aspect ratio
-            layout="responsive" // This will ensure the image takes up 100% of the container width
-          />
-        </div>
+        </Link>
       </div>
 
       {/* why choose us */}
 
-      <section className="w-full">
-        <WhyChooseUs />
+      <section className="w-full h-5">{/* <WhyChooseUs /> */}</section>
+      {/* service section */}
+      <section className="bg-white mb-4 md:mb-6" id="services">
+        <div className="w-full p-4 items-center">
+          <div className="flex flex-col justify-center p-4 md:p-6">
+            <h4 className="font-bold text-center text-primary">Our Services</h4>
+            <div className="h-1 mt-1 mx-auto w-10 bg-primary">
+              {/* small bar */}
+            </div>
+            <p className="mt-2 text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              reiciendis alias. Impedit?
+            </p>
+          </div>
+          <ProductsGrid />
+        </div>
       </section>
 
-      {/* service section */}
-      <div className="w-full p-4 bg-white">
-        <ProductsGrid />
-      </div>
-
       {/* testimonials */}
-      <div>
+      <div className="bg-white mt-4">
         <Testimonials />
       </div>
+
+      <ScrollButton />
     </div>
   );
 };

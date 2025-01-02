@@ -30,10 +30,12 @@ const cardData = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="w-full p-4 mb-4 border border-gray-200">
+    <section className="w-full p-4 mb-4 bg-white">
       <div className="mb-8">
-        <h3 className="font-bold text-primary mb-4">Why Choose Nethub?</h3>
-        <p className="">
+        <h4 className="font-bold mb-4 p-4 text-center text-primary text-pretty">
+          Why Choose Us?
+        </h4>
+        <p className="text-center">
           Discover why Nethub is the trusted choice for businesses.
         </p>
       </div>
@@ -42,15 +44,19 @@ const WhyChooseUs = () => {
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="flex border border-transparent hover:border-primary rounded-lg shadow-md hover:shadow-lg transition-shadow h-full"
+            className="flex border border-gray-300 hover:border-primary rounded-lg shadow-md hover:shadow-lg transition-shadow h-full"
           >
-            <div className="bg-primary w-2 h-full rounded-l-lg"></div>
-            <div className="p-6 flex flex-col justify-between">
-              <h5 className="mb-2">{card.title}</h5>
-              <p className="">{card.description}</p>
-              <a href={card.linkHref} className="text-accent mt-4 inline-block">
+            <div className="p-6  rounded-md flex flex-col justify-between">
+              <h5 className="mb-1 text-xl font-bold text-primary">
+                {card.title}
+              </h5>
+              <p className="text-sm">{card.description}</p>
+              {/* <a
+                href={card.linkHref}
+                className="text-accent mt-2  inline-block"
+              >
                 {card.linkText}
-              </a>
+              </a> */}
             </div>
           </div>
         ))}
