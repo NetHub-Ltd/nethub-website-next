@@ -79,10 +79,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-background text-darkGray">
         <Provider>
-          <div className="mb-[80px]">
+          <div className="sticky top-0 z-50 mx-auto w-full bg-white shadow-sm">
             <NavBar />
           </div>
-          <main className="min-h-screen">
+          <main className="min-h-screen max-w-6xl mx-auto">
             {children}
             <Analytics />
           </main>

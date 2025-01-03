@@ -34,7 +34,7 @@ const Home = () => {
 
         <Link
           href="#services"
-          className="bg-accent mt-4 text-white font-bold  text-center md:text-2xl md:w-[200px] p-2 rounded-md"
+          className="bg-accent mt-4 text-white   text-center md:text-2xl md:w-[200px] p-2 rounded-md"
         >
           <div className="flex items-center flex-row gap-1 justify-center">
             Get Started <ArrowRightIcon className=" h-6 w-6" />
@@ -50,7 +50,7 @@ const Home = () => {
         </p>
         <Link
           href="/about"
-          className="bg-slate-500 text-white text-xl mt-4 rounded-md p-2"
+          className="bg-accent text-white text-xl mt-4 rounded-md p-2"
         >
           <div className="flex items-center flex-row gap-1 justify-center">
             About Us <ArrowRightIcon className=" h-6 w-6" />

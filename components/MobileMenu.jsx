@@ -22,9 +22,7 @@ const MobileMenu = () => {
     <div className="relative">
       {/* Hamburger and Back Arrow Button */}
       <button onClick={() => setIsOpen(!isOpen)} className="p-2 z-50 relative">
-        {isOpen ? null : (
-          <Bars3Icon className="h-8 w-8 text-white bg-primary p-1 rounded-md" />
-        )}
+        {isOpen ? null : <Bars3Icon className="h-8 w-8 text-secondaryText" />}
       </button>
 
       {/* Sliding Full-Height Menu */}

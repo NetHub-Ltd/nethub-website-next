@@ -51,9 +51,9 @@ const Testimonials = () => {
               {/* eslint-disable-next-line react/no-unescaped-entities */}
               <div className="mb-2">
                 <h4 className=" font-semibold text-xl">{testimonial.name}</h4>
-                <p className="text-sm">{testimonial.role}</p>
+                <p className="text-xs">{testimonial.role}</p>
               </div>
-              <p className="mb-2">{testimonial.text}</p>
+              <p className="mb-2 text-sm">{testimonial.text}</p>
               <div className="flex items-center gap-1"></div>
             </div>
           ))}
