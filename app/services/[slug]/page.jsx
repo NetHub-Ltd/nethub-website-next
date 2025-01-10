@@ -1,6 +1,10 @@
-// import { seoData } from "../seoData";
 import { seoData } from "@app/utils/data";
 import { notFound } from "next/navigation";
+import WebsiteDesign from "@components/WebsiteDesign";
+import SeoServices from "@components/SeoServices";
+import AppDevelopment from "@components/AppDevelopment";
+import MpesaIntegration from "@components/MpesaIntegration";
+
 // import WebsiteDesign from "../components/WebsiteDesign";
 // import SeoServices from "../components/SeoServices";
 // import AppDevelopment from "../components/AppDevelopment";
@@ -8,7 +12,8 @@ import { notFound } from "next/navigation";
 
 // Dynamic Metadata Setup
 export async function generateMetadata({ params }) {
-  const seo = seoData[params.slug];
+  const { slug } = params; // ✅ Destructuring fixed
+  const seo = seoData[slug];
   if (!seo) {
     return notFound();
   }
@@ -27,17 +32,22 @@ export async function generateMetadata({ params }) {
 
 // Dynamic Page Content Based on Slug
 const DynamicServicePage = ({ params }) => {
-  const { slug } = params; // ✅ Destructuring fixed
-  const seo = seoData[slug];
+  const seo = seoData[params.slug];
   if (!seo) {
-    return notFound();
+    notFound();
   }
-  return (
-    <div>
-      <h5>{seo.title}</h5>
-      <p>{seo.description}</p>
-    </div>
-  );
+
+  // Conditional Rendering Based on the Component Defined in seoData
+  const components = {
+    WebsiteDesign,
+    SeoServices,
+    AppDevelopment,
+    MpesaIntegration,
+  };
+
+  const ServiceComponent = components[seo.component];
+
+  return ServiceComponent ? <ServiceComponent /> : <p>Service not found</p>;
 };
 
 export default DynamicServicePage;
