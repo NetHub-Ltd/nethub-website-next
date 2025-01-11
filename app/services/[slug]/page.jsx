@@ -11,7 +11,8 @@ import MpesaIntegration from "@components/MpesaIntegration";
 // import MpesaIntegration from "../components/MpesaIntegration";
 
 // Dynamic Metadata Setup
-export async function generateMetadata({ params }) {
+export async function generateMetadata(props) {
+  const params = await props.params;
   const { slug } = params; // ✅ Destructuring fixed
   const seo = seoData[slug];
   if (!seo) {
@@ -31,7 +32,8 @@ export async function generateMetadata({ params }) {
 }
 
 // Dynamic Page Content Based on Slug
-const DynamicServicePage = ({ params }) => {
+const DynamicServicePage = async props => {
+  const params = await props.params;
   const seo = seoData[params.slug];
   if (!seo) {
     notFound();
