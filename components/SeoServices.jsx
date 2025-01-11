@@ -101,6 +101,7 @@ const SEOServices = () => {
         <h2 className="text-3xl font-bold text-indigo-700 mb-6">
           Why Choose Nethub?
         </h2>
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         <p className="text-lg text-gray-700 text-left md:text-center max-w-3xl mx-auto mb-4">
           Our proven strategies are tailored for your business growth. Whether
           you're a startup or an established enterprise, we ensure long-term

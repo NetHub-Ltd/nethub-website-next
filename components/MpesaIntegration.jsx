@@ -147,6 +147,7 @@ const MpesaIntegrationServices = () => {
       <h1 className="text-4xl font-bold text-center text-primary mb-6">
         MPesa Integration Services
       </h1>
+      {/* eslint-disable-next-line react/no-unescaped-entities */}
       <p className="text-lg text-center text-secondaryText max-w-2xl mx-auto mb-12">
         Secure and efficient MPesa integration to simplify payments and
         streamline your business operations with Nethub's expert services.
