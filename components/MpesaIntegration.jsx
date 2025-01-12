@@ -150,10 +150,12 @@ const MpesaIntegrationServices = () => {
       {/* eslint-disable-next-line react/no-unescaped-entities */}
       <p className="text-lg text-center text-secondaryText max-w-2xl mx-auto mb-12">
         Secure and efficient MPesa integration to simplify payments and
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         streamline your business operations with Nethub's expert services.
       </p>
 
       {/* Cards Section */}
+      {/* eslint-disable-next-line react/no-unescaped-entities */}
       <div className="grid md:grid-cols-3 gap-8">
         {mpesaPackages.map((packageData, index) => (
           <div

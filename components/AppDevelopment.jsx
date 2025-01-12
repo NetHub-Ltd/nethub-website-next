@@ -59,7 +59,9 @@ const AppDevelopmentServices = () => {
       <h1 className="text-4xl font-bold text-center text-primary mb-6">
         App Development Services
       </h1>
+      {/* eslint-disable-next-line react/no-unescaped-entities */}
       <p className="text-xl md:text-center leading-relaxed max-w-2xl mx-auto mb-12">
+        {/* eslint-disable-next-line react/no-unescaped-entities */}
         Transform your ideas into powerful digital solutions with Nethub's
         expert app development services. Designed to help you grow and succeed.
       </p>
