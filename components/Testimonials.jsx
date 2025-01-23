@@ -99,23 +99,23 @@ const testimonialData = [
     rating: 5,
   },
   {
-    name: "Jane Smith",
+    name: "Jane Wangechi",
     role: "Marketing Director, Acme Co.",
     text: "The web development team at Nethub transformed our online presence.",
     rating: 4,
   },
-  {
-    name: "Samuel Brown",
-    role: "Product Manager, Tech Innovations",
-    text: "Nethub's SEO expertise helped us climb to the top of search results.",
-    rating: 5,
-  },
-  {
-    name: "Duncan Kariuki",
-    role: "CEO, MazeltovLTD",
-    text: "We were impressed by the speed and quality of the work done by Nethub.",
-    rating: 4,
-  },
+  // {
+  //   name: "Samuel Brown",
+  //   role: "Product Manager, Tech Innovations",
+  //   text: "Nethub's SEO expertise helped us climb to the top of search results.",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Duncan Kariuki",
+  //   role: "CEO, MazeltovLTD",
+  //   text: "We were impressed by the speed and quality of the work done by Nethub.",
+  //   rating: 4,
+  // },
 ];
 
 const Testimonials = () => {
