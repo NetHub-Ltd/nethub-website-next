@@ -1,7 +1,7 @@
 import { createUser, getUsers } from "@lib/user";
 import * as Yup from "yup";
 import { userSchema, UserResponseSchemaMain } from "@schemas/user"; // Assuming this is your Yup schema for user validation
-
+import { sendEmail } from "@lib/utils";
 const UserResponseSchema = Yup.array().of(
   Yup.object({
     id: Yup.string().required(),
@@ -57,6 +57,17 @@ export async function POST(request) {
     const valiatedUser = await UserResponseSchemaMain.validate(newUser, {
       stripUnknown: true,
     });
+
+    // send email validation
+    const emailResponse = await sendEmail({
+      to: newUser.email,
+      subject: "Verify Your Email Address",
+      htmlFilePath: "./public/templates/emailTemplate.html",
+      dynamicValues: {
+        ctaLink: process.env.emailverifylink,
+      },
+    });
+
     return new Response(JSON.stringify(valiatedUser), { status: 201 });
   } catch (error) {
     if (error instanceof SyntaxError) {

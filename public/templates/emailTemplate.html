@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify Your Email</title>
+    <style>
+      /* General Styles */
+      body {
+        font-size: 16px;
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8fafc;
+        color: #333333;
+      }
+      table {
+        width: 100%;
+        padding: 0 20px;
+      }
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+        color: #4f46e5;
+        padding: 10px 20px;
+      }
+      .header img {
+        max-width: 100%;
+        height: auto;
+        width: 32px;
+        margin-right: 10px;
+      }
+      .header h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .content {
+        padding: 20px;
+        text-align: left;
+      }
+      .content h2 {
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+      .content p {
+        font-size: 16px;
+        color: #555555;
+        margin: 0 0 20px;
+      }
+      .cta-button {
+        background-color: #0866ff;
+        color: #ffffff;
+        padding: 12px 24px;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        display: inline-block;
+        text-align: center;
+        margin: 20px 0;
+      }
+      .footer {
+        color: #555555;
+        font-size: 14px;
+        padding: 10px 20px;
+        text-align: center;
+      }
+      .footer a {
+        color: #2563eb;
+        text-decoration: none;
+      }
+
+      /* Media Queries for Mobile */
+      @media (max-width: 600px) {
+        .header h2 {
+          font-size: 20px;
+        }
+        .cta-button {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Email Container -->
+    <table>
+      <tr>
+        <td align="center">
+          <table class="email-container">
+            <!-- Header -->
+            <tr>
+              <td class="header">
+                <!-- <img
+                  src="/public/images/logo-v3.svg"
+                  alt="NetHub Logo"
+                  width="32"
+                /> -->
+                <h2>NetHub</h2>
+              </td>
+            </tr>
+
+            <!-- Email Subject -->
+            <tr>
+              <td class="content">
+                <h2>Verify Your Email Address</h2>
+                <p>
+                  To continue setting up your NetHub account, please verify that
+                  this is your email address.
+                </p>
+                <!-- Call-to-Action Button -->
+                <a href="[ctaLink]" style="color: #ffffff" class="cta-button"
+                  >Verify My Email</a
+                >
+                <p style="font-size: 14px; color: #9e9c9c">
+                  This email verification link is valid for 24 hours. If you did
+                  not make this request, please disregard this email. For help,
+                  contact us at
+                  <a href="mailto:support@example.com" style="color: #2563eb"
+                    >support@example.com</a
+                  >.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Footer -->
+            <tr>
+              <td class="footer">
+                <p>© NetHub, 2025. All rights reserved.</p>
+                <p>
+                  <a href="[Privacy Policy Link]">Privacy Policy</a> |
+                  <a href="[Terms of Service Link]">Terms of Service</a>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

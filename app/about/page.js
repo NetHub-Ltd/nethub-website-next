@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "@node_modules/next/link";
 import SkeletonLoader from "@components/SkeletonLoader";
+import Image from "@node_modules/next/image";
 
 /**
- * The About component renders the About Us page, which includes a hero section, 
- * a section describing who we are, a section describing our mission and vision, 
+ * The About component renders the About Us page, which includes a hero section,
+ * a section describing who we are, a section describing our mission and vision,
  * a section describing what we do, and a call to action.
  */
 const About = () => {
@@ -22,8 +23,8 @@ const About = () => {
         <div className="container mx-auto px-6 md:px-12 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
           <p className="text-lg md:text-xl">
-            Empowering businesses with cutting-edge digital solutions to
-            thrive in the modern world.
+            Empowering businesses with cutting-edge digital solutions to thrive
+            in the modern world.
           </p>
         </div>
       </section>
