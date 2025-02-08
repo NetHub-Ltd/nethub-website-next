@@ -250,28 +250,7 @@ const RegisterForm = () => {
             </Formik>
           </div>
         </div>
-      ) : (
-        // step 2
-        <div className="flex justify-center w-full min-h-[100px] mt-4">
-          <div className="w-full md:w-[500px] rounded-md border border-slate-100 hover:border-primary duration-300 transition-all bg-white p-8">
-            <h3 className="text-xl md:text-2xl  text-center font-bold mb-4 text-primary">
-              Account created successfully
-            </h3>
-            <p className="text-sm md:text-xl text-secondaryText mb-6">
-              We have sent a verification email to your email address. Click the
-              link to your email email to verify your account.
-            </p>
-            <div className="flex justify-center">
-              <button
-                onClick={() => setStep(1)}
-                className="bg-accent text-white px-6 py-2 rounded-full hover:bg-primary-dark focus:outline-none hover:opacity-80 transition duration-300"
-              >
-                Okay
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      ) : null}
     </div>
   );
 };

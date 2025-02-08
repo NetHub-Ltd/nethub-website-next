@@ -1,22 +1,31 @@
 import React from "react";
 import Link from "@node_modules/next/link";
+import SkeletonLoader from "@components/SkeletonLoader";
+import Image from "@node_modules/next/image";
 
+/**
+ * The About component renders the About Us page, which includes a hero section,
+ * a section describing who we are, a section describing our mission and vision,
+ * a section describing what we do, and a call to action.
+ */
 const About = () => {
   return (
     <div className="bg-[#f8fafc] text-[#333333] font-sans">
       {/* Hero Section */}
-      <section className=" text-white">
-        <div
-          className="bg-white flex h-[100px] md:h-[200px] bg-cover justify-center items-center bg-center w-full"
-          style={{ backgroundImage: 'url("/images/purple.jpg")' }}
-        >
-          <div className="container mx-auto px-6 md:px-12 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
-            <p className="text-lg md:text-xl">
-              Empowering businesses with cutting-edge digital solutions to
-              thrive in the modern world.
-            </p>
-          </div>
+      <section className="text-white">
+        <Image
+          src="/images/purple.jpg"
+          alt="Purple Background"
+          className="h-[100px] md:h-[200px] bg-cover"
+          width={1920}
+          height={1080}
+        />
+        <div className="container mx-auto px-6 md:px-12 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
+          <p className="text-lg md:text-xl">
+            Empowering businesses with cutting-edge digital solutions to thrive
+            in the modern world.
+          </p>
         </div>
       </section>
 
@@ -84,35 +93,6 @@ const About = () => {
       </section>
 
       {/* Meet Our Team */}
-      <section className="bg-white py-12 px-6 md:px-12">
-        <div className="container mx-auto max-w-5xl text-center">
-          <h2 className="text-3xl font-bold mb-6 text-secondaryText">
-            Meet Our Team
-          </h2>
-          <p className="text-lg mb-8">
-            Our team is the backbone of our success. Dedicated, innovative, and
-            always ready to serve.
-          </p>
-          {/* Placeholder for team images */}
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-[#e5e7eb] border rounded-lg p-6">
-              <div className="h-40 w-40 mx-auto bg-gray-300 rounded-full"></div>
-              <h3 className="mt-4 text-xl font-semibold">Team Member 1</h3>
-              <p>Role or Title</p>
-            </div>
-            <div className="bg-[#e5e7eb] border rounded-lg p-6">
-              <div className="h-40 w-40 mx-auto bg-gray-300 rounded-full"></div>
-              <h3 className="mt-4 text-xl font-semibold">Team Member 2</h3>
-              <p>Role or Title</p>
-            </div>
-            <div className="bg-[#e5e7eb] border rounded-lg p-6">
-              <div className="h-40 w-40 mx-auto bg-gray-300 rounded-full"></div>
-              <h3 className="mt-4 text-xl font-semibold">Team Member 3</h3>
-              <p>Role or Title</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action */}
       <section className="py-12 px-6 md:px-12 bg-primary text-white text-center">

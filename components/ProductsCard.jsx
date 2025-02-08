@@ -3,16 +3,10 @@ import Image from "@node_modules/next/image";
 
 const ProductsCard = ({ image, title, description, link, ctaText }) => {
   return (
-    <motion.div
-      className="border border-transparent w-full mb-4 md:w-[300px] shadow-md hover:shadow-lg hover:text-primary  transition-all hover:border-primary overflow-hidden bg-white rounded-md"
-      initial={{ opacity: 0, y: 50 }} // Start with 0 opacity and below the viewport
-      animate={{ opacity: 1, y: 0 }} // Fade in and slide up to the final position
-      transition={{ duration: 0.6, ease: "easeOut" }} // Smooth transition
-    >
-      {/* Image Section */}
-      <div className="w-full h-[150px] overflow-hidden">
+    <div className="relative group bg-white hover:bg-primary/5  rounded-xl border border-gray-200 shadow-sm transition-all duration-300 transform hover:scale-102 hover:shadow-lg hover:border-blue-500">
+      <div className="w-full h-[200px] overflow-hidden">
         <Image
-          className="object-cover rounded-t-md"
+          className="object-cover rounded-t-md rounded-md"
           src={image}
           alt={title}
           width={500} // This can be any number that represents the aspect ratio
@@ -20,27 +14,19 @@ const ProductsCard = ({ image, title, description, link, ctaText }) => {
           layout="responsive" // This will ensure the image takes up 100% of the container width
         />
       </div>
-      {/* 
-      <img
-        className="w-full h-[150px] object-cover rounded-t-md"
-        src={image}
-        alt={title}
-      /> */}
-
-      {/* Content Section */}
-      <div className="p-4 flex flex-col">
-        <h3 className="font-bold text-2xl">{title}</h3>
-        <p className="mt-1 text-gray-600">{description}</p>
+      <div className="p-6 py-6 flex flex-col ">
+        <h3 className="font-bold text-2xl mb-4 text-primary">{title}</h3>
+        <p className="mb-4 leading-relaxed text-gray-600">{description}</p>
 
         <button
           type="button"
           onClick={() => (window.location.href = link)}
-          className="bg-accent mt-4 hover:bg-accent/90 text-white font-semibold py-2 px-4 rounded"
+          className="bg-accent mb-4 text-xl hover:bg-accent/90 text-white font-semibold py-2 px-4 rounded"
         >
           {ctaText}
         </button>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

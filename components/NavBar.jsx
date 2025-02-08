@@ -13,13 +13,12 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="max-w-6xl flex flex-row mx-auto  p-4 h-16 items-center">
-      <div></div>
+    <nav className="w-full justify-between flex flex-row mx-auto  p-4 h-20 items-center">
       <div className="flex items-center flex-row gap-1">
-        <Link href="/">
+        {/* <Link href="/">
           <Image src="/images/logo-v3.svg" width={36} height={36} alt="Logo" />
-        </Link>
-        <Link href="/" className="text-xl">
+        </Link> */}
+        <Link href="/" className="text-xl font-bold text-primary">
           NetHub
         </Link>
       </div>
