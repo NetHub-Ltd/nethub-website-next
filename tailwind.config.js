@@ -11,6 +11,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        autofill: "transparent",
         background: "#f8fafc",
         primary: "#4f46e5",
         accent: "#0866ff",
