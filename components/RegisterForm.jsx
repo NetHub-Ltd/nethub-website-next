@@ -250,9 +250,7 @@ const RegisterForm = () => {
             </Formik>
           </div>
         </div>
-      ) : (
-
-      )}
+      ) : null}
     </div>
   );
 };
