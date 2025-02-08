@@ -1,7 +1,9 @@
-import React from "react";
+import SkeletonLoader from "@/components/SkeletonLoader";
 
-const loading = () => {
-  return <div>loading</div>;
-};
-
-export default loading;
+export default function Loading() {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+      <SkeletonLoader />
+    </div>
+  );
+}

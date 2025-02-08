@@ -7,6 +7,7 @@ Welcome to the **Nethub Website** repository! This project aims to showcase Neth
 ## Project Overview
 
 ### Technologies Used:
+
 - **Frontend & Backend Framework**: [Next.js](https://nextjs.org/) (React-based framework)
 - **Styling**: [Tailwind CSS](https://tailwindcss.com/)
 - **State Management**: Built-in React state management or Context API
@@ -17,6 +18,7 @@ Welcome to the **Nethub Website** repository! This project aims to showcase Neth
 ---
 
 ## Features
+
 - **Modern Design**: A sleek, professional, and accessible interface aligned with Nethub’s branding.
 - **Responsive Layout**: Optimized for all devices (desktop, tablet, and mobile).
 - **Dynamic Pages**: Efficient data fetching and rendering using Next.js’s server-side rendering (SSR) and static site generation (SSG).
@@ -28,16 +30,19 @@ Welcome to the **Nethub Website** repository! This project aims to showcase Neth
 ## Development Setup
 
 ### Prerequisites:
+
 1. **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
 2. **Yarn** or **npm** (for dependency management)
 
 ### Installation:
+
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/nethub-website.git
+   git clone https://github.com/NetHub-Ltd/nethub-website-next
    cd nethub-website
    ```
 2. Install dependencies:
+
    ```bash
    npm install
    # or
@@ -45,6 +50,7 @@ Welcome to the **Nethub Website** repository! This project aims to showcase Neth
    ```
 
 3. Run the development server:
+
    ```bash
    npm run dev
    # or
@@ -84,6 +90,7 @@ Welcome to the **Nethub Website** repository! This project aims to showcase Neth
 ---
 
 ## Contributing
+
 We welcome contributions to improve the Nethub Website. Follow the steps below to contribute:
 
 1. Fork the repository.
@@ -104,6 +111,7 @@ We welcome contributions to improve the Nethub Website. Follow the steps below t
 ---
 
 ## Future Roadmap
+
 1. **Dynamic Product Pages**: Display product details fetched from a database.
 2. **Order Tracking System**: Allow users to view the status of their orders.
 3. **User Authentication**: Secure user login and registration functionality.
@@ -113,11 +121,13 @@ We welcome contributions to improve the Nethub Website. Follow the steps below t
 ---
 
 ## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
 ## Contact
+
 For inquiries, support, or feedback, please contact us at [nethub@example.com](mailto:nethub@example.com).
 
 ---

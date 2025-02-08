@@ -1,4 +1,5 @@
-const BlogPost = ({ params }) => {
+const BlogPost = async props => {
+  const params = await props.params;
   const { slug } = params;
 
   return (
