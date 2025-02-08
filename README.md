@@ -118,7 +118,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 ---
 
 ## Contact
-For inquiries, support, or feedback, please contact us at [nethub@example.com](mailto:nethub@example.com).
+For inquiries, support, or feedback, please contact us at [nethubdigitalsolutions@gmail.com](mailto:nethubdigitalsolutions@gmail.com).
 
 ---
 
