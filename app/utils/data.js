@@ -40,7 +40,7 @@ export const seoData = {
     description:
       "Transform your online presence with expert website design services.",
     keywords:
-      "website design, web design services, professional website design",
+      "website design, web design services, professional website design, website design services in kenya",
     author: "Nethub",
     ogImage: "/images/hero-bg.jpg",
     component: "WebsiteDesign",
@@ -49,7 +49,7 @@ export const seoData = {
     title: "SEO Services | Boost Your Website Visibility",
     description:
       "Improve your website's search engine ranking with our SEO strategies.",
-    keywords: "SEO, search engine optimization, improve website ranking",
+    keywords: "seo services in kenya, search engine optimization",
     author: "Nethub",
     ogImage: "/images/seo.jpg",
     component: "SeoServices",
@@ -66,7 +66,8 @@ export const seoData = {
   "mpesa-integration": {
     title: "MPesa Integration Services | Simplify Payments",
     description: "Easily integrate MPesa into your system for secure payments.",
-    keywords: "MPesa integration, payment integration, mobile payments",
+    keywords:
+      "MPesa integration, payment integration, mobile payments, lipa na mpesa website integration",
     author: "Nethub",
     ogImage: "/images/mpesa.jpg",
     component: "MpesaIntegration",
