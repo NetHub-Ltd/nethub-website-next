@@ -127,9 +127,10 @@ export const metadata = {
     "Nethub offers expert web development, SEO services, and M-Pesa integration to help your business grow",
   keywords: [
     "Nethub",
-    "Web Development",
-    "SEO Services",
-    "M-Pesa Integration",
+    "website designers kenya",
+    "website designers in nairobi",
+    "web design company kenya",
+    "lipa na mpesa onboarding",
     "Digital Marketing",
     "Business Growth",
   ],
@@ -172,7 +173,7 @@ export default function RootLayout({ children }) {
           </div>
           <main className="min-h-screen w-full mx-auto">
             {children}
-            <Analytics /> /* Vercel Analytics */
+            <Analytics />
           </main>
           <Footer />
         </Provider>
