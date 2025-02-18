@@ -6,10 +6,11 @@ import * as Yup from "yup";
 import { FaGoogle, FaFacebook } from "@node_modules/react-icons/fa";
 import Image from "@node_modules/next/image";
 import { generateVerificationToken } from "@lib/auth";
-import { useState } from "react";
+import { use, useState } from "react";
+import { useEffect } from "react";
 
 const RegisterForm = () => {
-  const [step, setStep] = useState(2);
+  const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sendtoAPI = async (values, setSubmitting) => {
     try {
@@ -22,10 +23,16 @@ const RegisterForm = () => {
         body: JSON.stringify({ ...values, verification_token }),
       });
 
-      if (response.status === 201) {
-        setStep(2);
+      if (response.ok) {
+        // ✅ Ensure the API response is actually valid
         const data = await response.json();
-        console.log("User created successfully:", data);
+        if (data.success) {
+          // ✅ Check for a success flag
+          setStep(2);
+          console.log("User created successfully:", data);
+        } else {
+          console.error("API returned an error:", data);
+        }
       } else {
         console.error("Failed to create user:", response.statusText);
       }
@@ -33,6 +40,7 @@ const RegisterForm = () => {
       console.error("Error submitting the form:", error);
     }
   };
+
   // Validation schema for the form
   const validationSchema = Yup.object({
     firstName: Yup.string().required("First name is required"),
@@ -250,9 +258,7 @@ const RegisterForm = () => {
             </Formik>
           </div>
         </div>
-      ) : (
-
-      )}
+      ) : null}
     </div>
   );
 };

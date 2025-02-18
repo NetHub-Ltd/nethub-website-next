@@ -132,6 +132,7 @@ out
 .nuxt
 dist
 *.db
+*.env
 
 # Gatsby files
 .cache/

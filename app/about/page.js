@@ -3,29 +3,34 @@ import Link from "@node_modules/next/link";
 import SkeletonLoader from "@components/SkeletonLoader";
 import Image from "@node_modules/next/image";
 
-/**
- * The About component renders the About Us page, which includes a hero section,
- * a section describing who we are, a section describing our mission and vision,
- * a section describing what we do, and a call to action.
- */
+export const metadata = {
+  title: "Nethub - Learn More About us",
+  description: "About Nethub",
+};
+
 const About = () => {
   return (
     <div className="bg-[#f8fafc] text-[#333333] font-sans">
-      {/* Hero Section */}
       <section className="text-white">
-        <Image
-          src="/images/purple.jpg"
-          alt="Purple Background"
-          className="h-[100px] md:h-[200px] bg-cover"
-          width={1920}
-          height={1080}
-        />
-        <div className="container mx-auto px-6 md:px-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">About Us</h1>
-          <p className="text-lg md:text-xl">
-            Empowering businesses with cutting-edge digital solutions to thrive
-            in the modern world.
-          </p>
+        <div className="relative w-full h-[200px] md:h-[350px] lg:h-[300px]">
+          {/* Background Image */}
+          <Image
+            src="/images/purple.jpg"
+            alt="Purple Background"
+            fill
+            className="object-cover"
+          />
+
+          {/* Text Overlay */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 bg-black/50">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
+              About Us
+            </h1>
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl max-w-2xl">
+              Empowering businesses with cutting-edge digital solutions to
+              thrive in the modern world.
+            </p>
+          </div>
         </div>
       </section>
 

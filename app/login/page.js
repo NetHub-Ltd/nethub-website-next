@@ -119,6 +119,7 @@ const LoginForm = () => {
 
           {/* Sign Up Link */}
           <p className="text-center text-sm text-gray-600">
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             Don't have an account?
             <Link href="/register" className="text-primary hover:underline">
               Sign Up

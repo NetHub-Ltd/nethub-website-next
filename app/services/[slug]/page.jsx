@@ -5,12 +5,6 @@ import SeoServices from "@components/SeoServices";
 import AppDevelopment from "@components/AppDevelopment";
 import MpesaIntegration from "@components/MpesaIntegration";
 
-// import WebsiteDesign from "../components/WebsiteDesign";
-// import SeoServices from "../components/SeoServices";
-// import AppDevelopment from "../components/AppDevelopment";
-// import MpesaIntegration from "../components/MpesaIntegration";
-
-// Dynamic Metadata Setup
 export async function generateMetadata(props) {
   const params = await props.params;
   const { slug } = params; // ✅ Destructuring fixed
@@ -32,7 +26,7 @@ export async function generateMetadata(props) {
 }
 
 // Dynamic Page Content Based on Slug
-const DynamicServicePage = async props => {
+const DynamicServicePage = async (props) => {
   const params = await props.params;
   const seo = seoData[params.slug];
   if (!seo) {
