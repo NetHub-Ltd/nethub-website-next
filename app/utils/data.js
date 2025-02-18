@@ -1,7 +1,7 @@
 export const data = [
   {
     title: "Website Design",
-    slug: "website-design22",
+    slug: "website-design",
     description:
       "Transform your online presence with cutting-edge, user-centric designs tailored to captivate your audience and drive results.",
     image: "/images/hero-bg.jpg",
@@ -36,7 +36,7 @@ export const data = [
 
 export const seoData = {
   "website-design": {
-    title: "Website Design Services | Build Your Online Presence",
+    title: "NetHub - Website Design",
     description:
       "Transform your online presence with expert website design services.",
     keywords:
@@ -46,7 +46,7 @@ export const seoData = {
     component: "WebsiteDesign",
   },
   "seo-services": {
-    title: "SEO Services | Boost Your Website Visibility",
+    title: "NetHub - SEO Services",
     description:
       "Improve your website's search engine ranking with our SEO strategies.",
     keywords: "seo services in kenya, search engine optimization",
@@ -55,7 +55,7 @@ export const seoData = {
     component: "SeoServices",
   },
   "app-development": {
-    title: "App Development Services | Build Your Custom Application",
+    title: "NetHub - App Development",
     description:
       "Custom app development services for mobile and web applications.",
     keywords: "app development, mobile app development, web app development",
@@ -64,7 +64,7 @@ export const seoData = {
     component: "AppDevelopment",
   },
   "mpesa-integration": {
-    title: "MPesa Integration Services | Simplify Payments",
+    title: "NetHub - Simplify Payments",
     description: "Easily integrate MPesa into your system for secure payments.",
     keywords:
       "MPesa integration, payment integration, mobile payments, lipa na mpesa website integration",

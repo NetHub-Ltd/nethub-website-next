@@ -1,7 +1,14 @@
-"use client";
 import { FaCheckCircle, FaPlusCircle } from "react-icons/fa";
 import CustomServiceRequest from "@components/CustomService";
 import Link from "@node_modules/next/link";
+
+export const metadata = {
+  title: "Nethub - Services",
+  description:
+    "Explore our web development, SEO, and M-Pesa integration services to grow your business.",
+  keywords:
+    "Nethub, web development, SEO, M-Pesa integration, digital solutions, business growth",
+};
 
 const Services = () => {
   const services = [

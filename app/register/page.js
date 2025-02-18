@@ -6,10 +6,10 @@ import * as Yup from "yup";
 import { FaGoogle, FaFacebook } from "@node_modules/react-icons/fa";
 import Image from "@node_modules/next/image";
 import { generateVerificationToken } from "@lib/auth";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const RegisterForm = () => {
-  const [step, setStep] = useState(2);
+  const [step, setStep] = useState(1);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const sendtoAPI = async (values, setSubmitting) => {
     try {
@@ -23,8 +23,8 @@ const RegisterForm = () => {
       });
 
       if (response.status === 201) {
-        setStep(2);
         const data = await response.json();
+        setStep(2);
         console.log("User created successfully:", data);
       } else {
         console.error("Failed to create user:", response.statusText);
