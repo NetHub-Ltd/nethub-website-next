@@ -8,6 +8,12 @@ import {
 
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
+export const metadata = {
+  title: "Nethub - Contact Us",
+  description:
+    "Contact us for any questions or inquiries. We're here to help you succeed in the digital world.",
+};
+
 const ContactCards = () => {
   const contactInfo = [
     {
